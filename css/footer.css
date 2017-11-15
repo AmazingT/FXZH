@@ -1,0 +1,70 @@
+/* footer */
+footer .container{
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+footer .list{
+	width: 80%;
+	margin: 0 auto;
+}
+footer .list ul li.title{
+	width: 25%;
+	float: left;
+	text-align: center;
+}
+footer .list li.title ul>li> a{
+	color: #575a5a;
+	font-size: 16px;
+}
+footer .list li.title ul>li> a:hover{
+	color: #f60;
+}
+footer .list li.title> ul > li{
+	line-height: 30px;
+}
+footer .list li.title> ul{
+	margin-top: 20px;
+}
+footer .list li.img> ul>li{
+	width: 140px;
+	height: 140px;
+	padding: 8px;
+	margin: 0 auto;
+	background-color: #575a5a;
+}
+footer .address{
+	margin-left: 182px;
+	margin-top: 50px;
+}
+footer .address .call{
+	margin-left: 4px;
+}
+footer .address .call span{
+	font-size: 18px;
+}
+footer .address .addr{
+	margin-left: 8px;
+}
+footer .address .addr span{
+	font-size: 16px;
+}
+footer .address .icon-phone:before,
+footer .address .icon-address:before{
+	color: #000;
+	font-size: 18px;
+}
+footer .share .icon{
+	font-size: 25px;
+}
+footer .share .icon-weChat{
+	margin: 0 10px;
+}
+footer .copyright{
+	margin-top: 60px;
+	text-align: center;
+}
+footer .copyright p{
+	color: #000;
+    font-family: montserrat,sans-serif;
+    font-size: 14px;
+}

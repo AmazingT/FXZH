@@ -1,0 +1,295 @@
+.ourService{
+	height: 400px;
+	margin-top: 100px;
+	background: url(../imgs/2/service_bg.png) no-repeat;
+	background-size: cover;
+	background-position: 100% 100%;
+}
+.development{
+	padding: 30px;
+}
+.development .container{
+	text-align: center;
+}
+.development .title h2{
+	margin: 0 auto;
+	width: 140px;
+	position: relative;
+}
+.development .title h2:before{
+	content: '';
+    position: absolute;
+    top: 4px;
+    left: -14px;
+    border-top: 20px solid #4d4d4d;
+    border-right: 20px solid transparent;
+}
+.development .title h2:after{
+	content: '';
+    position: absolute;
+    top: 6px;
+    right: -14px;
+    border-bottom: 20px solid #4d4d4d;
+    border-left: 20px solid transparent;
+}
+.development .title .sub-title{
+	margin-top: 2px;
+	color: #808080;
+	font-size: 14px;
+}
+.development .develop-list{
+	margin-top: 40px;
+}
+.development .develop-list .row ul>li>img{
+	width: 80px;
+}
+.development .develop-list .row ul>li>p{
+	margin-top: 8px;
+	font-size: 18px;
+	color: #666;
+}
+
+/* philosophy */
+.center{
+	width: 100%;
+	padding: 40px 0;
+	background-color: #f1f1f1;
+}
+.center .container .service-concept,
+.center .container .business-scope{
+	background-color: #fff;
+}
+.center .service-concept .content{
+	padding: 25px 30px;
+}
+.center .service-concept .title{
+	font-size: 0;
+}
+.center .service-concept .title h3{
+	display: inline-block;
+}
+.service-concept .content .title .sub-title{
+	position: relative;
+	margin-left: 40px;
+	color: #808080;
+	font-size: 14px;
+	display: inline-block;
+}
+.service-concept .content .title .sub-title:before{
+	content: '';
+	width: 2px;
+	height: 22px;
+	position: absolute;
+	top: -4px;
+	left: -20px;
+	transform: rotate(25deg);
+	background-color: #808080;
+}
+.clearfix:before{
+	content: '';
+	clear: both;
+	display: block;
+}
+.service-concept .content .pic-list{
+	margin-bottom: 20px;
+}
+.service-concept .content .pic-list>ul>li{
+	height: 100px;
+	float: left;
+}
+.service-concept .content .pic-list>ul>li>.pic{
+	width: 67px;
+	height: 70px;
+	margin-top: 15px;
+}
+.service-concept .content .pic-list>ul>li>.pic>img{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.service-concept .content .pic-list>ul>li{
+	padding: 4px 0;
+	border-right: 2px solid #d2d2d2;
+}
+.service-concept .content .pic-list>ul>li:nth-child(2){
+	margin: 0 15px;
+}
+@media only screen and (max-width: 480px){
+	.service-concept .content .pic-list>ul>li:nth-child(2){
+		margin-left: 72px;
+	}
+	.service-concept .content .pic-list>ul>li{
+		margin-left: 72px;
+		border-right: none;
+	}
+}
+.service-concept .content .pic-list>ul>li:last-child{
+	border-right: none;
+}
+.service-concept .content .pic-list>ul>li>.desc{
+	margin: 23px 15px;
+}
+.service-concept .content .pic-list>ul>li>.pic,
+.service-concept .content .pic-list>ul>li>.desc{
+	float: left;
+	vertical-align: middle;
+}
+.content .pic-list>ul>li>.desc>.text,
+.service-concept .content .description{
+	color: #666;
+}
+.service-concept .content .description{
+	line-height: 25px;
+}
+.content .pic-list>ul>li>.desc>.count>span{
+	font-size: 25px;
+}
+
+
+.business-scope{
+	padding: 20px 0;
+	margin-top: 40px;
+	background-color: #fff;
+}
+.business-scope .title{
+	text-align: center;
+}
+.business-scope .title h2{
+	margin: 0 auto;
+	width: 140px;
+	position: relative;
+}
+.business-scope .title h2:before{
+	content: '';
+    position: absolute;
+    top: 4px;
+    left: -18px;
+    border-right: 16px solid #4d4d4d;
+    border-top: 12px solid transparent;
+    border-bottom: 12px solid transparent;
+}
+.business-scope .title h2:after{
+	content: '';
+    position: absolute;
+    top: 4px;
+    right: -18px;
+    border-left: 16px solid #4d4d4d;
+    border-top: 12px solid transparent;
+    border-bottom: 12px solid transparent;
+}
+.business-scope .title .sub-title{
+	margin-top: 4px;
+	color: #666;
+	font-size: 14px;
+}
+.business-scope .pic-wrapper .left-arrow,
+.business-scope .pic-wrapper .pic-content,
+.business-scope .pic-wrapper .pic-content .img{
+	float: left;
+}
+.business-scope .pic-wrapper .left-arrow{
+	margin: 0 30px;
+}
+.business-scope .pic-wrapper .right-arrow{
+	float: right;
+	margin: 0 30px;
+}
+.business-scope .pic-wrapper{
+	height: 232px;
+	line-height: 232px;
+	margin-top: 20px;
+}
+.business-scope .pic-wrapper .left-arrow,
+.business-scope .pic-wrapper .right-arrow{
+	width: 60px;
+	height: 198px;
+    line-height: 198px;
+    cursor: pointer;
+	text-align: center;
+}
+.business-scope .pic-wrapper .left-arrow:hover .fa,
+.business-scope .pic-wrapper .right-arrow:hover .fa{
+	color: #f60;
+}
+.pic-wrapper .left-arrow i.fa,
+.pic-wrapper .right-arrow i.fa{
+	font-size: 25px;
+}
+.business-scope .pic-wrapper .pic-content{
+	width: 798px;
+	height: 232px;
+	overflow: hidden;
+}
+.business-scope .pic-wrapper .pic-content .img{
+	height: 100%;
+}
+.business-scope .pic-wrapper .pic-content .img:nth-child(2),
+.business-scope .pic-wrapper .pic-content .img:nth-child(5),
+.business-scope .pic-wrapper .pic-content .img:nth-child(8){
+	margin: 0 51px;
+}
+.business-scope .pic-wrapper .pic-content .img img{
+	width: 266px;
+	height: 198px;
+	display: block;
+}
+.business-scope .pic-wrapper .pic-content .img p{
+	height: 34px;
+	line-height: 34px;
+	color: #666;
+	text-align: center;
+}
+.business-scope .pic-wrapper .pic-content{
+	width: 900px;
+	position: relative;
+}
+.business-scope .pic-wrapper .pic-content .pic-inner{
+	width: 2700px;
+	height: 232px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	transition: all 0.4s linear;
+}
+
+@media only screen and (max-width: 1200px){
+	.business-scope .pic-wrapper .pic-content{
+		width: 572px;
+	}
+	.business-scope .pic-wrapper .pic-content .img:nth-child(2),
+	.business-scope .pic-wrapper .pic-content .img:nth-child(5),
+	.business-scope .pic-wrapper .pic-content .img:nth-child(8){
+		margin: 0 40px;
+	}
+	.business-scope .pic-wrapper .left-arrow,
+	.business-scope .pic-wrapper .right-arrow{
+		margin: 0;
+	}
+}
+@media only screen and (max-width: 768px){
+	.business-scope .pic-wrapper .pic-content{
+		width: 266px;
+	}
+}
+@media only screen and (max-width: 480px){
+	.business-scope .pic-wrapper .left-arrow,
+	.business-scope .pic-wrapper .right-arrow{
+		margin: 0;
+		width: 47px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
