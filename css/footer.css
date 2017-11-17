@@ -59,6 +59,9 @@ footer .address .icon-address:before{
 footer .share .icon{
 	font-size: 25px;
 }
+footer .share .icon:hover:before{
+	color: #fc0051;
+}
 footer .share .icon-weChat{
 	margin: 0 10px;
 }

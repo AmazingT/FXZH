@@ -83,7 +83,7 @@
 	margin-top: 10px;
 }
 
-.our-team .container h3{
+.our-team .container>.leader>h3{
 	width: 142px;
 	padding: 5px 10px;
 	margin-top: 0;
@@ -196,6 +196,11 @@
 	height: 260px;
 	float: left;
 	overflow: hidden;
+	position: relative;
+	background-position: center;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 .our-team .others .child .child-list>ul>li.black{
 	background-color: #5d5d5d;
@@ -206,26 +211,62 @@
 .our-team .others .child .child-list>ul>li.avatar>img{
 	display: block;
 	height: 100%;
-	-webkit-filter: grayscale(1);
-    -moz-filter: grayscale(1);
-    -ms-filter: grayscale(1);
-    -o-filter: grayscale(1);
-    filter: grayscale(1);
-    transition: all 0.2s linear;
 }
-.our-team .others .child .child-list>ul>li.avatar:hover img{
-	-webkit-filter: grayscale(0);
-	-moz-filter: grayscale(0);
-	-ms-filter: grayscale(0);
-	-o-filter: grayscale(0);
-	filter: grayscale(0);
+.our-team .others .child .child-list>ul>li.avatar>.details{
+	position: relative;
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	color: #fff;
+	padding: 30px 40px;
+	overflow: hidden;
+	background-color: rgba(23,23,28,0.7);
+}
+.our-team .others .child .child-list>ul>li.avatar:before{
+	content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: inherit;
+     -webkit-filter: blur(0px); 
+    -moz-filter: blur(0px);
+    -ms-filter: blur(0px);
+    -o-filter: blur(0px);
+    filter: blur(0px); 
+    margin: auto;
+    z-index: 0;
+}
+.our-team .others .child .child-list>ul>li.avatar:hover:before{
+	-webkit-filter: blur(15px);
+    filter: blur(15px);
+    margin: -30px;
+}
+.our-team .others .child .child-list>ul>li.avatar:hover .details{
+	opacity: 1;
+}
+.our-team .others .child .child-list>ul>li.avatar>.details>h3{
+	position: relative;
+	font-weight: 400;
+}
+.our-team .others .child .child-list>ul>li.avatar>.details>h3:after{
+	position: absolute;
+    top: 40px;
+    left: 0;
+    content: "";
+    width: 18px;
+    height: 1px;
+    background-color: #FFFFFF;
+}
+.our-team .others .child .child-list>ul>li.avatar>.details>.position{
+	margin-top: 30px;
+	font-size: 14px;
+    color: #83858E;
+    line-height: 24px;
+}
 
-	-webkit-transform:scale(1.1);
-	-moz-transform:scale(1.1);
-	-ms-transform:scale(1.1);
-	-o-transform:scale(1.1);
-	transform:scale(1.1);
-}
 
 .connection{
 	width: 100%;
@@ -326,7 +367,7 @@
 }
 @media only screen and (max-width: 480px){
 	.we{
-		height: 150px;
+		height: 160px;
 	}
 	.we .content{
 		display: none;
