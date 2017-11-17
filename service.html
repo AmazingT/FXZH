@@ -7,8 +7,7 @@
 	<meta http-equiv="x-dns-prefetch-control" content="off">
 	<link rel="shortcut icon" href="imgs/1/favicon.ico">
 	<title>风向至合</title>
-	<meta name="keywords" content="">
-	<meta name="description" content="">
+
 	
 	<link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
 	<link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
@@ -42,16 +41,16 @@
 						<a href="index.html">首页</a>
 					</li>
 					<li>
-						<a href="information.html">关于我们</a>
+						<a href="about.html">关于我们</a>
 					</li>
 					<li class="active">
-						<a href="case.html">我们的服务</a>
+						<a href="service.html">我们的服务</a>
 					</li>
 					<li>
 						<a href="about.html">人才招聘</a>
 					</li>
 					<li>
-						<a href="about.html">我们</a>
+						<a href="we.html">我们</a>
 					</li>
 				</ul>
 			</div>
@@ -60,7 +59,9 @@
 	<!-- header end -->
 	
 	<!-- service title start -->
-	<section class="ourService"></section>
+	<section class="ourService">
+		<img src="imgs/2/service_bg.png" alt="我们的服务" />
+	</section>
 	<!-- service title end -->
 	
 	<!-- development -->
@@ -167,6 +168,22 @@
 				<div class="title">
 					<h2>业务范围</h2>
 					<div class="sub-title">BUSINESS SCOPE</div>
+				</div>
+				
+				<!-- select -->
+				<div id="select" class="select">
+					<div class="scope col-lg-4">
+						<i data-index="1" class="icon-gou"></i>
+						<span>地产广告整合推广</span>
+					</div>
+					<div class="scope col-lg-4">
+						<i data-index="2"></i>
+						<span>多媒体广告设计</span>
+					</div>
+					<div class="scope col-lg-4">
+						<i data-index="3"></i>
+						<span>微信平台管理运营</span>
+					</div>
 				</div>
 
 				<!-- picture shift -->
@@ -310,29 +327,6 @@
 	</footer>
 	<!-- footer end -->
 
-	<script type="text/javascript">
-		(function() {
-			var left = document.getElementById("leftArrow"),
-			    right = document.getElementById("rightArrow"),
-			    pic = document.getElementById("picInner");
-
-			// 如果不在内联样式中添加style="left:0;",那么就获取不到left值
-			left.addEventListener("click", function() {
-				pic.style.left = parseInt(pic.style.left) + 900 + "px";
-				
-				if (parseInt(pic.style.left) > 0) { // 必须用parseInt,因为left值有px单位
-					pic.style.left = -1800 + "px";
-				}
-			}, false);
-
-			right.addEventListener("click", function() {
-				pic.style.left = parseInt(pic.style.left) - 900 + "px";
-
-				if (parseInt(pic.style.left) < -1800) {
-					pic.style.left = 0 + "px";
-				}
-			}, false);
-		})();
-	</script>
+	<script src="js/service.js" type="text/javascript"></script>
 </body>
 </html>

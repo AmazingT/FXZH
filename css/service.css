@@ -1,9 +1,14 @@
 .ourService{
-	height: 400px;
+	height: 500px;
 	margin-top: 100px;
-	background: url(../imgs/2/service_bg.png) no-repeat;
+	/*background: url(../imgs/2/service_bg.png) no-repeat;
 	background-size: cover;
-	background-position: 100% 100%;
+	background-position: 100% 100%;*/
+}
+.ourService img{
+	display: block;
+	width: 100%;
+    height: 100%;
 }
 .development{
 	padding: 30px;
@@ -241,6 +246,7 @@
 }
 .business-scope .pic-wrapper .pic-content{
 	width: 900px;
+	margin: 0 auto;
 	position: relative;
 }
 .business-scope .pic-wrapper .pic-content .pic-inner{
@@ -250,6 +256,29 @@
 	top: 0;
 	left: 0;
 	transition: all 0.4s linear;
+}
+
+.business-scope .select{
+	width: 80%;
+	margin: 20px auto;
+	overflow: hidden;
+}
+.business-scope .select .scope{
+	float: left;
+	text-align: center;
+}
+.business-scope .select .scope span{
+	font-size: 16px;
+}
+.business-scope .select .scope i{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	line-height: 20px;
+	cursor: pointer;
+	text-align: center;
+	vertical-align: text-bottom;
+	border: 1px solid #4d4d4d;
 }
 
 @media only screen and (max-width: 1200px){
@@ -267,15 +296,33 @@
 	}
 }
 @media only screen and (max-width: 768px){
+	.ourService{
+		height: 300px;
+		margin-top: 70px;
+	}
 	.business-scope .pic-wrapper .pic-content{
 		width: 266px;
 	}
+	.business-scope .select{
+		width: 100%;
+	}
+	.business-scope .select .scope{
+		width: 33.33%;
+	}
 }
 @media only screen and (max-width: 480px){
+	.ourService{
+		height: 150px;
+	}
 	.business-scope .pic-wrapper .left-arrow,
 	.business-scope .pic-wrapper .right-arrow{
 		margin: 0;
 		width: 47px;
+	}
+	.business-scope .select .scope{
+		width: 100%;
+		text-align: left;
+		margin-left: 120px;
 	}
 }
 

@@ -1,4 +1,7 @@
 /* footer */
+footer{
+	background-color: #f2f2f2;
+}
 footer .container{
 	padding-top: 40px;
 	padding-bottom: 40px;
